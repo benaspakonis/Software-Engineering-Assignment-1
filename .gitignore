@@ -1,0 +1,6 @@
+/target/
+.metadata/.lock
+*.zip
+*.index
+*.tree
+*.resources

@@ -14,6 +14,14 @@ public class Course {
 	private DateTime startDate;
 	private DateTime endDate;
 	
+	public Course(String name,List<Module> modules,List<Student> students,DateTime startDate, DateTime endDate) {
+		this.name = name;
+		this.modules = modules;
+		this.students = students;
+		this.startDate = startDate;
+		this.endDate = endDate;
+	}
+	
 	public String getName() {
 		return name;
 	}
