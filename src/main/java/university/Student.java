@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.joda.time.DateTime;
+import org.joda.time.Years;
 
 public class Student {
 
@@ -20,6 +21,7 @@ public class Student {
 	public Student(String name,DateTime DOB) {
 		this.name = name;
 		this.DOB = DOB;
+		generateAge();
 	}
 	
 	public String getName() {
@@ -94,4 +96,9 @@ public class Student {
 		courses.remove(course);
 	}
 	
+	public void generateAge() {
+		DateTime localDate = new DateTime(System.currentTimeMillis());
+		Years years = Years.yearsBetween(DOB, localDate);
+		age = years.getYears();
+	}
 }
