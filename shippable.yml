@@ -5,4 +5,4 @@ jdk:
 
 build:
   ci:
-    - ant test
+   - mvn install -DskipTests=true
