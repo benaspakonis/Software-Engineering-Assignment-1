@@ -55,16 +55,17 @@ public class Course {
 	
 	public void addModule(Module module) {
 		modules.add(module);
-		/*
-		for(int i = 0; i < module.getStudents().size();i++) {
-			students.add(module.getStudents().get(i));
-		}
-		*/
 	}
 	
 	public void removeModule(Module module) {
 		modules.remove(module);
-		
 	}
 	
+	public void addStudent(Student student) {
+		students.add(student);
+	}
+	
+	public void removeStudent(Student student) {
+		students.remove(student);
+	}
 }
