@@ -21,6 +21,7 @@ public class Student {
 	public Student(String name,DateTime DOB) {
 		this.name = name;
 		this.DOB = DOB;
+		generateUsername();
 		generateAge();
 	}
 	
